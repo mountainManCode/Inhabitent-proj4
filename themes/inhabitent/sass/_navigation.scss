@@ -26,12 +26,6 @@ a {
 
 /* Menus */
 
-.main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-
 	ul {
 		display: none;
 		list-style: none;
@@ -40,11 +34,11 @@ a {
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: $base__space-unit;
-			left: -999rem;
-			z-index: 99999;
+		//	float: left;
+		//	position: absolute;
+			// top: $base__space-unit;
+			// left: -999rem;
+			// z-index: 99999;
 
 			ul {
 				left: -999rem;
@@ -77,8 +71,8 @@ a {
 		}
 	}
 	li {
-		float: left;
-		position: relative;
+	//	float: left;
+	//	position: relative;
 
 		&:hover > a,
 		&.focus > a {
@@ -93,11 +87,14 @@ a {
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 	}
-}
+
 
 /* Small menu. */
+
+
 .menu-toggle,
 .main-navigation.toggled ul {
+
 	display: block;
 }
 
@@ -119,14 +116,57 @@ a {
 		overflow: hidden;
 	}
 
-	.nav-previous {
-		float: left;
-		width: 50%;
-	}
+	// .nav-previous {
+	// 	float: left;
+	// 	width: 50%;
+	// }
 
-	.nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
-	}
+	// .nav-next {
+	// 	float: right;
+	// 	text-align: right;
+	// 	width: 50%;
+	// }
+}
+.site-header {
+	display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+	width: 100%;
+	border-bottom: $solid__border;
+	padding: .5rem 0;
+	z-index: 3;
+	background-color: transparent;
+
+}
+
+.site-branding {
+  flex-basis: 15%;
+	background: url("../images/inhabitent-logo-tent.svg") no-repeat;
+	background-size: 50px 33px;
+}
+.main-navigation {
+	// display: flex;
+// 	flex-flow: row nowrap;
+// 	justify-content: space-around;
+	flex-basis: 50%;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+#primary-menu.menu {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	flex-basis: 40%;
+}
+
+.search-form {
+	// display: none;
+	flex-basis: 10%;
+}
+
+fieldset {
+	padding: 0;
+	margin: 0;
+	border: none;
 }

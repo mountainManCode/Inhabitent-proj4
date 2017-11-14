@@ -1,13 +1,13 @@
 /*!
-Theme Name: Inhabitent Theme
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: Aaron Griffiths
-Author URI: https://github.com/mountainManCode
-Description: An outdoor shopping and blog theme; based on underscores.
+Author: RED Academy
+Author URI: http://www.redacademy.com
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: 
+Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -225,6 +225,10 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+.main-navigation {
+  font-family: "Novovento Sans Web";
+  font-size: 1rem; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -234,7 +238,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -427,41 +431,29 @@ a {
     outline: 0; }
 
 /* Menus */
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
-  .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-              box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5rem;
+ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0; }
+  ul ul {
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); }
+    ul ul ul {
       left: -999rem;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999rem;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
+      top: 0; }
+    ul ul li:hover > ul,
+    ul ul li.focus > ul {
+      left: 100%; }
+    ul ul a {
+      width: 200px; }
+  ul li:hover > ul,
+  ul li.focus > ul {
+    left: auto; }
+
+a {
+  display: block;
+  text-decoration: none; }
 
 /* Small menu. */
 .menu-toggle,
@@ -480,18 +472,55 @@ a {
   margin: 0 0 1.5rem;
   overflow: hidden; }
 
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
+.site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1;
+  padding: .5rem 0;
+  z-index: 3;
+  background-color: transparent; }
 
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
+.site-branding {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  background: url("../images/inhabitent-logo-tent.svg") no-repeat;
+  background-size: 50px 33px; }
+
+.main-navigation {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-transform: uppercase;
+  color: #fff; }
+
+#primary-menu.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%; }
+
+.search-form {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%; }
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -527,22 +556,6 @@ a {
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5rem; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5rem; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
