@@ -11,6 +11,27 @@
 	padding: 0;
 }
 
+.home-hero-banner img {
+	height: 275px;
+	width: 275px;
+	max-width: 100%;
+}
+
+.home-hero-banner {
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/home-hero.jpg") no-repeat top;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.site-footer {
+	background: url("../images/dark-wood@2x.png");
+	height: 40vh;
+	width: 100%;
+}
+
 /* Make sure embeds and iframes fit their containers. */
 
 embed,

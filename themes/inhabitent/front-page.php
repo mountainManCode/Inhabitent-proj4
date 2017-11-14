@@ -9,8 +9,11 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-		<?php if ( have_posts() ) : ?>
+			<section class="home-hero-banner">
+				<img src="./build/images/inhabitent-logo-full.svg" class="logo" alt"Inhabitent logo" />
+			</section>
+		
+			<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>

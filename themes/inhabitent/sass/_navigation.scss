@@ -136,6 +136,7 @@ a {
 	padding: .5rem 0;
 	z-index: 3;
 	background-color: transparent;
+	position: sticky;
 
 }
 
@@ -170,3 +171,13 @@ fieldset {
 	margin: 0;
 	border: none;
 }
+
+input {
+	width: 130px;
+	transition: width 0.4s ease-in-out;
+}
+
+input:focus {
+	width: 100%;
+}
+

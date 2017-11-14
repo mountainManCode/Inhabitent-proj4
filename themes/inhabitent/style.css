@@ -486,7 +486,9 @@ a {
   border-bottom: 1px solid #e1e1e1;
   padding: .5rem 0;
   z-index: 3;
-  background-color: transparent; }
+  background-color: transparent;
+  position: -webkit-sticky;
+  position: sticky; }
 
 .site-branding {
   -ms-flex-preferred-size: 15%;
@@ -521,6 +523,14 @@ fieldset {
   padding: 0;
   margin: 0;
   border: none; }
+
+input {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out; }
+
+input:focus {
+  width: 100%; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -580,6 +590,10 @@ fieldset {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/* Hero banner */
+.home-hero {
+  background: url(../images/home-hero.jpg) no-repeat; }
+
 /* Posts and pages */
 .sticky {
   display: block; }
@@ -625,6 +639,31 @@ fieldset {
   margin-bottom: 0;
   margin-top: 0;
   padding: 0; }
+
+.home-hero-banner img {
+  height: 275px;
+  width: 275px;
+  max-width: 100%; }
+
+.home-hero-banner {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../images/home-hero.jpg") no-repeat top;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/home-hero.jpg") no-repeat top;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh; }
+
+.site-footer {
+  background: url("../images/dark-wood@2x.png");
+  height: 40vh;
+  width: 100%; }
 
 /* Make sure embeds and iframes fit their containers. */
 embed,
