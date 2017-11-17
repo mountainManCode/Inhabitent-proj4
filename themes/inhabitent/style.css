@@ -225,10 +225,6 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
-.main-navigation {
-  font-family: "Novovento Sans Web";
-  font-size: 1rem; }
-
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -241,11 +237,25 @@ textarea {
   font-family: "Merriweather", sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.75; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Novovento Sans Web", sans-serif;
+  text-transform: uppercase;
+  line-height: 1.25;
+  letter-spacing: 2px;
   clear: both; }
+
+h2 {
+  font-size: 2.4rem;
+  color: #2f1339; }
+
+/* Buttons */
+button {
+  font-family: "Novovento Sans Web", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase; }
 
 /* Copy */
 p {
@@ -306,6 +316,9 @@ html {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
+
+.custom-hero-banner, .front-page-wrapper .product-info, .front-page-wrapper .front-page-journal, .front-page-wrapper .adventure {
+  margin-bottom: 4.5rem; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -418,7 +431,61 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+.site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1;
+  padding: .5rem 0;
+  z-index: 3;
+  background-color: #fff;
+  position: fixed; }
+
+.site-branding {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  background: url("../../images/inhabitent-logo-tent.svg") no-repeat;
+  background-size: 50px 33px; }
+
+.main-navigation {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-transform: uppercase;
+  color: #fff; }
+
+#primary-menu.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%; }
+
+.search-form {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%; }
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none; }
+
 /* Links */
+.site-header a {
+  color: #248A83; }
+
 a {
   color: royalblue; }
   a:visited {
@@ -438,7 +505,8 @@ ul {
   padding-left: 0; }
   ul ul {
     -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); }
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    top: 1.5rem; }
     ul ul ul {
       left: -999rem;
       top: 0; }
@@ -471,66 +539,6 @@ a {
 .post-navigation {
   margin: 0 0 1.5rem;
   overflow: hidden; }
-
-.site-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
-  border-bottom: 1px solid #e1e1e1;
-  padding: .5rem 0;
-  z-index: 3;
-  background-color: transparent;
-  position: -webkit-sticky;
-  position: sticky; }
-
-.site-branding {
-  -ms-flex-preferred-size: 15%;
-      flex-basis: 15%;
-  background: url("../images/inhabitent-logo-tent.svg") no-repeat;
-  background-size: 50px 33px; }
-
-.main-navigation {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  text-transform: uppercase;
-  color: #fff; }
-
-#primary-menu.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%; }
-
-.search-form {
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%; }
-
-fieldset {
-  padding: 0;
-  margin: 0;
-  border: none; }
-
-input {
-  width: 130px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out; }
-
-input:focus {
-  width: 100%; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -590,11 +598,10 @@ input:focus {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-/* Hero banner */
-.home-hero {
-  background: url(../images/home-hero.jpg) no-repeat; }
-
 /* Posts and pages */
+p {
+  margin-bottom: 1.5rem; }
+
 .sticky {
   display: block; }
 
@@ -639,31 +646,6 @@ input:focus {
   margin-bottom: 0;
   margin-top: 0;
   padding: 0; }
-
-.home-hero-banner img {
-  height: 275px;
-  width: 275px;
-  max-width: 100%; }
-
-.home-hero-banner {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../images/home-hero.jpg") no-repeat top;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/home-hero.jpg") no-repeat top;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100vh; }
-
-.site-footer {
-  background: url("../images/dark-wood@2x.png");
-  height: 40vh;
-  width: 100%; }
 
 /* Make sure embeds and iframes fit their containers. */
 embed,
@@ -718,3 +700,162 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/* Hero Banner*/
+.custom-hero-banner {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/home-hero.jpg") no-repeat top;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg") no-repeat top;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  z-index: 2; }
+
+.custom-hero-banner.logo {
+  height: 275px;
+  width: 275px;
+  max-width: 100%;
+  z-index: 0; }
+
+.home .entry-title a {
+  display: none; }
+
+.front-page-wrapper h2 {
+  text-align: center;
+  margin: 0 0 3.75rem 0; }
+
+.front-page-journal-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 18vw; }
+
+/* Shop */
+.product-type-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center; }
+
+.product-type-block-wrapper {
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 23.5%;
+          flex: 0 1 23.5%;
+  max-width: 23.5%;
+  padding: 0.75rem; }
+  .product-type-block-wrapper :hover {
+    color: #d99054; }
+
+.product-type-block-wrapper img {
+  height: 70px;
+  width: 70px; }
+
+/* Journal */
+.front-page-journal-entry {
+  font-size: 1rem;
+  font-family: "Merriweather", sans-serif;
+  line-height: 1.75;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20vw;
+  min-width: 350px; }
+
+.journal-header {
+  font-size: 1.3rem;
+  margin: 0 0 1rem 0; }
+
+.front-page-journal-entry-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #e1e1e1;
+  padding: 0.75rem;
+  height: auto; }
+
+.front-page-journal-button {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+  padding: 0.75rem 1.5rem; }
+
+/* Journal Page */
+.blog .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin: auto;
+  padding-top: 50px; }
+
+.blog .content-area {
+  border-right: 1px solid #e1e1e1;
+  padding: 3rem 5% 3rem 0;
+  width: 73%; }
+
+.blog .entry-header {
+  line-height: 0; }
+
+.blog .entry-title a {
+  background-color: #248A83;
+  color: #fff;
+  font-size: 2.1rem;
+  padding: .75rem 1.5rem;
+  margin-top: 2.25rem;
+  max-width: 75%;
+  left: 0;
+  top: 0; }
+
+/* About Page */
+.custom-hero {
+  height: 100vh;
+  width: 100%; }
+
+/* 404 Page */
+.widget-title h2 {
+  font-size: 1.5rem; }
+
+/* Footer */
+.site-footer {
+  background: url("../../images/dark-wood@2x.png");
+  height: 40vh;
+  width: 100%; }

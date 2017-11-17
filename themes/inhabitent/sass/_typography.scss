@@ -10,13 +10,30 @@ textarea {
 	color: $color__text-main;
 	font-family: $font__main;
 	@include font-size(1);
-	line-height: $font__line-height-body;
+	line-height: $base__line-height;
 }
 
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
+	font-family: $font__accent;
+	text-transform: uppercase;
+	line-height: 1.25;
+	letter-spacing: 2px;
 	clear: both;
+}
+
+h2 {
+	font-size: 2.4rem;
+	color: $color__purple;
+}
+
+/* Buttons */
+
+button {
+	font-family: $font__accent;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 /* Copy */

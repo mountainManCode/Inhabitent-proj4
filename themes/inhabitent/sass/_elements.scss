@@ -17,6 +17,10 @@ body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 }
 
+.custom-hero-banner,  .front-page-wrapper .product-info,   .front-page-wrapper .front-page-journal, .front-page-wrapper .adventure {
+	margin-bottom: 4.5rem;
+}
+
 blockquote, q {
 	quotes: "" "";
 
