@@ -1,0 +1,98 @@
+/* Front page */
+
+	/* Hero Banner*/
+
+.custom-hero-banner {
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../../images/home-hero.jpg") no-repeat top;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	z-index: 2;
+}
+
+.custom-hero-banner.logo {
+	height: 275px;
+	width: 275px;
+	max-width: 100%;
+	z-index: 0;
+}
+
+.home .entry-title a {
+	display: none;	
+}
+
+.front-page-wrapper h2 {
+	text-align: center;
+	margin: 0 0 3.75rem 0;
+}
+
+// .sitemain.
+
+.front-page-journal-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 0 18vw;
+}
+
+		/* Shop */
+
+.product-type-blocks {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.product-type-block-wrapper {
+	border: $solid__border;
+	border-top-width: 5px;
+	flex: 0 1 23.5%;
+	max-width: 23.5%;
+	padding: 0.75rem;
+
+	:hover {
+		color: $color__orange;
+	}
+}
+
+.product-type-block-wrapper img {
+	height: 70px;
+	width: 70px;
+}
+
+	/* Journal */
+  
+.front-page-journal-entry {
+	font-size: 1rem;
+	font-family: $font__main;
+	line-height: $base__line-height;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	width: 20vw;
+	min-width: 350px;
+}
+
+.journal-header {
+	font-size: 1.3rem;
+	margin: 0 0 1rem 0;
+}
+
+.front-page-journal-entry-text {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	border: $solid__border;
+	padding: 0.75rem;
+	height: auto;
+}
+
+.front-page-journal-button {
+	background-color: transparent;
+	color: #000;
+	border: 1px solid #000;
+	padding: 0.75rem 1.5rem;
+}

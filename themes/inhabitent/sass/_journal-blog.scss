@@ -1,0 +1,27 @@
+
+/* Journal Page */
+
+.blog .site-content {
+	width: 1120px;
+}
+
+.blog .content-area {
+	border-right: $solid__border;
+	padding: 3rem 5% 3rem 0;
+	width: 73%;
+}
+
+.blog a.entry-header {
+	color: #fff;
+}
+.blog h2.entry-title {
+	background-color: $color__green;
+	color: #fff;
+	font-size: 2.1rem;
+	padding: .75rem 1.5rem;
+	margin-top: 2.25rem;
+	max-width: 75%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
