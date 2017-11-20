@@ -5,11 +5,11 @@
 .site-header {
 	display: flex;
   flex-flow: row nowrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	max-width: 100%;
 	height: 100%;
 	border-bottom: $solid__border;
-	padding: .5rem 0;
+	padding: .5rem 10%;
 	z-index: 10;
 	background-color: #fff;
 	position: sticky; 
@@ -74,7 +74,7 @@
 	}
 
 	button {
-		background: transparent;
+		background: $color__background-body;
 		border: none;
 	}
 

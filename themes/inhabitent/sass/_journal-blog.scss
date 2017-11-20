@@ -2,61 +2,57 @@
 /* Journal Page */
 
 .blog .site-content {
-	width: 1120px;
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	margin-left: auto;
-	margin-right: auto;
+
 
 }
 
-.blog .content-area {
-	border-right: $solid__border;
-	padding: 3rem 5% 3rem 0;
-	width: 73%;
+.blog .site-main {
+
 
 }
 
-.blog .entry-header {
+.blog .entry-header, .single-post .entry-header {
 	width: 100%;
 	max-height: 100%;
 	line-height: 0;
 
-	img{
-		width: 1500px;
+	img {
+		width: 100%;
 	}
 }
 
-.blog .entry-header a {
+.blog .entry-header a, .single-post .entry-header a {
 	color: #fff;
 }
-.blog h2.entry-title {
+.blog h2.entry-title, .single-post h1.entry-title {
 	background-color: $color__green;
-	font-size: 2.1rem;
+	color: #fff;
+	font-size: 2rem;
 	padding: .75rem 1.5rem;
-	margin-top: 2.25rem;
+	margin-top: 4vh;
 	max-width: 75%;
 	position: absolute;
 	left: 0;
 	top: 0;
 }
 
-.blog .widget-area {
-	padding-left: 3rem 5%;
-	width: 27%;
-}
+// .widget-area {
+// 	padding-left: 3rem 5%;
+// 	width: 27%;
+// }
 
 .blog .entry-meta, .single-post .entry-meta {
 	background-color: $color__green;
 	color: #fff;
+	display: flex;
+	flex-flow: row nowrap;
 	padding: 1rem 1.5rem;
 	position: absolute;
 	right: 0;
 	bottom: 0;
 }
 
-.blog .entry-content {
+.blog .entry-content, .single-post .entry-content {
 	margin: 1.5rem 0 0;
 
 	p {

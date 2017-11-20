@@ -445,12 +445,13 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 100%;
   height: 100%;
   border-bottom: 1px solid #e1e1e1;
-  padding: .5rem 0;
+  padding: .5rem 10%;
   z-index: 10;
   background-color: #fff;
   position: -webkit-sticky;
@@ -519,7 +520,7 @@ textarea {
   .search-wrapper .search-bar {
     border: none; }
   .search-wrapper button {
-    background: transparent;
+    background: #fff;
     border: none; }
   .search-wrapper .fa-search {
     font-size: 1.25rem; }
@@ -756,10 +757,39 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-body.content-area {
+.blog .site-content, .single-post .site-content, .page .site-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 10%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.blog .content-area, .single .content-area, .page .content-area {
   border-right: 1px solid #e1e1e1;
   padding-right: 5%;
-  width: 73%; }
+  width: 73%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .page-title {
   margin-top: 0; }
@@ -769,6 +799,11 @@ body.content-area {
 
 .blog .entry-header, .single-post .entry-header {
   position: relative; }
+
+/* Widget - Sidebar */
+.widget-area {
+  padding-left: 3rem 5%;
+  width: 27%; }
 
 /* About Page */
 .custom-hero {
@@ -892,8 +927,30 @@ body.content-area {
   padding: 0.75rem 1.5rem; }
 
 /* Journal Page */
-.blog .site-content {
-  width: 1120px;
+.blog .entry-header, .single-post .entry-header {
+  width: 100%;
+  max-height: 100%;
+  line-height: 0; }
+  .blog .entry-header img, .single-post .entry-header img {
+    width: 100%; }
+
+.blog .entry-header a, .single-post .entry-header a {
+  color: #fff; }
+
+.blog h2.entry-title, .single-post h1.entry-title {
+  background-color: #248A83;
+  color: #fff;
+  font-size: 2rem;
+  padding: .75rem 1.5rem;
+  margin-top: 4vh;
+  max-width: 75%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.blog .entry-meta, .single-post .entry-meta {
+  background-color: #248A83;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -901,52 +958,14 @@ body.content-area {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: auto;
-  margin-right: auto; }
-
-.blog .content-area {
-  border-right: 1px solid #e1e1e1;
-  padding: 3rem 5% 3rem 0;
-  width: 73%; }
-
-.blog .entry-header {
-  width: 100%;
-  max-height: 100%;
-  line-height: 0; }
-  .blog .entry-header img {
-    width: 1500px; }
-
-.blog .entry-header a {
-  color: #fff; }
-
-.blog h2.entry-title {
-  background-color: #248A83;
-  font-size: 2.1rem;
-  padding: .75rem 1.5rem;
-  margin-top: 2.25rem;
-  max-width: 75%;
-  position: absolute;
-  left: 0;
-  top: 0; }
-
-.blog .widget-area {
-  padding-left: 3rem 5%;
-  width: 27%; }
-
-.blog .entry-meta, .single-post .entry-meta {
-  background-color: #248A83;
-  color: #fff;
   padding: 1rem 1.5rem;
   position: absolute;
   right: 0;
   bottom: 0; }
 
-.blog .entry-content {
+.blog .entry-content, .single-post .entry-content {
   margin: 1.5rem 0 0; }
-  .blog .entry-content p {
+  .blog .entry-content p, .single-post .entry-content p {
     margin-bottom: 1.5rem; }
 
 /* 404 Page */
