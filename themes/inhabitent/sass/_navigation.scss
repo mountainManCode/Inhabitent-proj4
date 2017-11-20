@@ -90,7 +90,8 @@
 }
 
 a {
-	color: $color__link;
+	color: $color__green;
+	text-decoration: none;
 
 	&:visited {
 		color: $color__link-visited;

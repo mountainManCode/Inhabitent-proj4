@@ -161,7 +161,6 @@
  					) ) ); ?>
  				</div><!-- .reply -->
  			</div><!-- .comment-content -->
-
  		</article><!-- .comment-body -->
 
  	<?php

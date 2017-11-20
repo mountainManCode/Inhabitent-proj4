@@ -23,6 +23,11 @@ get_header(); ?>
 
 				<?php get_template_part( 'template-parts/content' ); ?>
 
+					<a href="<?php the_permalink(); ?>">
+						<button class="journal-blog-button" >Read Entry</button>
+					</a>
+
+
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>

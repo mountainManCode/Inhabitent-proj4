@@ -88,7 +88,7 @@ get_header(); ?>
 									</a>
 								</div>
 									<a href="<?php the_permalink(); ?>">
-										<button class="front-page-journal-button" >Read Entry</button>
+										<button class="journal-blog-button" >Read More</button>
 									</a>
 							</section>
 						</section>

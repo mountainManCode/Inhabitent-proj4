@@ -1,0 +1,20 @@
+.widget-area {
+	padding-left: 5%;
+	width: 27%;
+
+  h2.widget-title {
+    font-size: 1.5rem;
+  }
+}
+
+.widget {
+  p {
+    font-family: $font__main;
+    text-decoration: none;
+  }
+
+  .day-of-week {
+    font-size: 700;
+  }
+}
+

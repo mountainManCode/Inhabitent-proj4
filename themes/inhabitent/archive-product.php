@@ -1,3 +1,15 @@
+<?php
+/**
+ * The template for displaying archive pages.
+ *
+ * @package Inhabitent_Theme
+ */
+
+get_header(); ?>
+
+	<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+
 <h2>Shop Stuff</h2>
 <?php
    $terms = get_terms( array(
@@ -35,3 +47,9 @@
 		</li>
 	<?php endforeach; wp_reset_postdata(); ?>
 </ul>
+
+</main><!-- #main -->
+	</div><!-- #primary -->
+
+	<?php get_sidebar(); ?>
+	<?php get_footer(); ?>
