@@ -1,7 +1,52 @@
 /* Footer */
 
 .site-footer {
-	background: url("../../images/dark-wood@2x.png");
-	height: 40vh;
+	background: url("../../images/dark-wood@2x.png") no-repeat center;
+	background-size: cover;	
+	height: 50vh;
 	width: 100%;
+	color: #fff;
+
+	h3 {
+		color: $color__orange;
+	}
+
+	a {
+		color: #fff;
+	}
 }
+
+.footer-wrapper {
+	display: flex;
+	justify-content: space-around;
+	padding: 3rem 4rem;
+
+	.footer-contact, .footer-business-hours {
+		flex-basis: 20%;
+	}
+
+	.footer-inhabitent-image {
+		flex-basis: 45%;
+		text-align: right;
+	}
+
+	img {
+		margin: 1rem 0;
+	}
+
+	.site-info {
+		text-align: center;
+		padding: 2rem;
+	}
+
+	.dashicons {
+	display: inline;
+	margin: 0 .25rem;
+	}
+	
+	.dashicons-email, .dashicons-phone {
+		margin: 0 .25rem;
+	}
+}
+
+

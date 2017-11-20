@@ -3,11 +3,7 @@
 --------------------------------------------------------------*/
 
 
-.site {
-	flex: 1 0 auto;
-}
-
-body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .content-area {
+body.content-area {
 	border-right: 1px solid #e1e1e1;
 	padding-right: 5%;
 	width: 73%;

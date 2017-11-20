@@ -23,7 +23,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php red_starter_numbered_pagination(); ?>
+			<?php inhabitent_numbered_pagination(); ?>
 
 		<?php else : ?>
 
@@ -36,10 +36,3 @@ get_header(); ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
-
-
-
-(function($) {
-
- // code here
-})(jQuery);
