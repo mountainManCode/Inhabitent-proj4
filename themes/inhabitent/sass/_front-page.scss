@@ -30,13 +30,6 @@
 
 // .sitemain.
 
-.front-page-journal-wrapper {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	margin: 0 18vw;
-}
-
 		/* Shop */
 
 .product-type-blocks {
@@ -64,7 +57,13 @@
 }
 
 	/* Journal */
-  
+	
+.front-page-journal-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
 .front-page-journal-entry {
 	font-size: 1rem;
 	font-family: $font__main;
@@ -72,12 +71,12 @@
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-between;
-	width: 20vw;
-	min-width: 350px;
+	max-width: 32%;
+	min-width: 150px;
 }
 
 .journal-header {
-	font-size: 1.3rem;
+	font-size: 1.25rem;
 	margin: 0 0 1rem 0;
 }
 

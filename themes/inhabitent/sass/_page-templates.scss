@@ -1,23 +1,27 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.blog, .single-post, .page {
-	// padding: 0 10%;
+
+/*Pages without Side Bar - Front Page, About, and Shop */
+.home .front-page-wrapper, .post-type-archive-product .content-area {
+	padding: 0 10% 2rem;
 }
 
+
+/* Pages with Side Bar - Journal Pages and Find Us Page*/
 .blog .site-content, .single-post .site-content, .page .site-content {
 	width: 100%;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
-	padding: 2rem 10%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.blog .content-area, .single .content-area, .page .content-area {
+.blog .content-area, .single .content-area, .page-template-default .content-area {
 	border-right: 1px solid #e1e1e1;
-	padding-right: 5%;
+	margin-left: 10%;
+	padding: 2rem 5% 2rem 0;
 	width: 73%;
 	display: flex;
 	flex-flow: column nowrap;
@@ -36,3 +40,5 @@
 .blog .entry-header, .single-post .entry-header {
 	position: relative;
 }
+
+
