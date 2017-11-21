@@ -851,7 +851,7 @@ object {
   margin: 0 0 3.75rem 0; }
 
 /* Shop */
-.product-type-blocks {
+.home .product-type-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -864,7 +864,7 @@ object {
           justify-content: space-between;
   text-align: center; }
 
-.product-type-block-wrapper {
+.home .product-type-block-wrapper {
   border: 1px solid #e1e1e1;
   border-top-width: 5px;
   -webkit-box-flex: 0;
@@ -872,10 +872,10 @@ object {
           flex: 0 1 23.5%;
   max-width: 23.5%;
   padding: 0.75rem; }
-  .product-type-block-wrapper :hover {
+  .home .product-type-block-wrapper :hover {
     color: #d99054; }
 
-.product-type-block-wrapper img {
+.home .product-type-block-wrapper img {
   height: 70px;
   width: 70px; }
 
@@ -933,6 +933,45 @@ object {
   color: #000;
   border: 1px solid #000;
   padding: 0.75rem 1.5rem; }
+
+/* Main Shop Page */
+.post-type-archive-product .product-type-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center; }
+  .post-type-archive-product .product-type-blocks .product-type-block-wrapper {
+    text-transform: uppercase;
+    padding: 1rem 5%; }
+
+.post-type-archive-product .products-archive-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%; }
+
+.post-type-archive-product .product-wrapper {
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 23.5%;
+          flex: 0 1 23.5%;
+  max-width: 23.5%;
+  padding: 0.75rem; }
 
 /* Journal Page */
 .blog .entry-header, .single-post .entry-header {
@@ -1003,11 +1042,12 @@ object {
 
 /* Footer */
 .site-footer {
-  background: url("../../images/dark-wood@2x.png") no-repeat center;
+  background: url("../../images/dark-wood@2x.png") no-repeat bottom;
   background-size: cover;
   height: 50vh;
   width: 100%;
-  color: #fff; }
+  color: #fff;
+  padding-bottom: 15rem; }
   .site-footer h3 {
     color: #d99054; }
   .site-footer a {
@@ -1019,7 +1059,7 @@ object {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 3rem 4rem; }
+  padding: 3rem 10% 0; }
   .footer-wrapper .footer-contact, .footer-wrapper .footer-business-hours {
     -ms-flex-preferred-size: 20%;
         flex-basis: 20%; }
@@ -1028,12 +1068,12 @@ object {
         flex-basis: 45%;
     text-align: right; }
   .footer-wrapper img {
-    margin: 1rem 0; }
-  .footer-wrapper .site-info {
-    text-align: center;
-    padding: 2rem; }
+    padding: 1rem 0 0; }
   .footer-wrapper .dashicons {
     display: inline;
     margin: 0 .25rem; }
   .footer-wrapper .dashicons-email, .footer-wrapper .dashicons-phone {
     margin: 0 .25rem; }
+
+.site-info {
+  text-align: center; }

@@ -1,0 +1,36 @@
+    /* Main Shop Page */
+    
+.post-type-archive-product {
+
+  .product-type-blocks {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    text-align: center;
+  
+    .product-type-block-wrapper {
+      text-transform: uppercase;
+      padding: 1rem 5%;
+    }
+  }
+
+  .products-archive-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .product-wrapper {
+    // display: flex;
+    // flex-flow: row nowrap;
+    // justify-content: space-between;
+    border: $solid__border;
+    border-top-width: 5px;
+    flex: 0 1 23.5%;
+    max-width: 23.5%;
+    padding: 0.75rem;
+  }
+
+}
+

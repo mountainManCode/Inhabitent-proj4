@@ -28,32 +28,32 @@
 	margin: 0 0 3.75rem 0;
 }
 
-// .sitemain.
-
 		/* Shop */
+.home {
 
-.product-type-blocks {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	text-align: center;
-}
-
-.product-type-block-wrapper {
-	border: $solid__border;
-	border-top-width: 5px;
-	flex: 0 1 23.5%;
-	max-width: 23.5%;
-	padding: 0.75rem;
-
-	:hover {
-		color: $color__orange;
+	.product-type-blocks {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		text-align: center;
 	}
-}
 
-.product-type-block-wrapper img {
-	height: 70px;
-	width: 70px;
+	.product-type-block-wrapper {
+		border: $solid__border;
+		border-top-width: 5px;
+		flex: 0 1 23.5%;
+		max-width: 23.5%;
+		padding: 0.75rem;
+
+		:hover {
+			color: $color__orange;
+		}
+	}
+
+	.product-type-block-wrapper img {
+		height: 70px;
+		width: 70px;
+	}
 }
 
 	/* Journal */

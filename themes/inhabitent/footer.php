@@ -32,7 +32,7 @@
 								Monday-Friday: 9am - 5pm
 							</p>
 							<p>
-								Saturday: 10am - 2pm
+								Saturday: 10am - 4pm
 							</p>
 							<p>
 								Sunday: Closed
@@ -42,11 +42,10 @@
 						<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-text.svg' ?>" alt="Inhabitent logo">
 					</div>
 				</section>
-				<div>
-					<p class="site-info">Copyright &nbsp 2016 Inhabitent</p>
+				<div class="site-info">
+					<p>Copyright &copy 2016 Inhabitent</p>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
-		</div><!-- #page -->
 
 		<?php wp_footer(); ?>
     <!-- <script src="/js/scripts.js"></script> -->

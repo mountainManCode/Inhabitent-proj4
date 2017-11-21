@@ -1,11 +1,12 @@
 /* Footer */
 
 .site-footer {
-	background: url("../../images/dark-wood@2x.png") no-repeat center;
+	background: url("../../images/dark-wood@2x.png") no-repeat bottom;
 	background-size: cover;	
 	height: 50vh;
 	width: 100%;
 	color: #fff;
+	padding-bottom: 15rem;
 
 	h3 {
 		color: $color__orange;
@@ -19,7 +20,7 @@
 .footer-wrapper {
 	display: flex;
 	justify-content: space-around;
-	padding: 3rem 4rem;
+	padding: 3rem 10% 0;
 
 	.footer-contact, .footer-business-hours {
 		flex-basis: 20%;
@@ -31,12 +32,7 @@
 	}
 
 	img {
-		margin: 1rem 0;
-	}
-
-	.site-info {
-		text-align: center;
-		padding: 2rem;
+		padding: 1rem 0 0;
 	}
 
 	.dashicons {
@@ -49,4 +45,7 @@
 	}
 }
 
+.site-info {
+	text-align: center;
+}
 
