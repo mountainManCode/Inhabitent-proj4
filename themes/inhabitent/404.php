@@ -33,7 +33,7 @@ get_header(); ?>
 								'orderby'    => 'count',
 								'order'      => 'DESC',
 								'show_count' => 1,
-								'title_li'   => '',
+								'title_li'   => ' ',
 								'number'     => 10,
 							) );
 						?>
@@ -52,4 +52,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

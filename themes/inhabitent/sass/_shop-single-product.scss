@@ -1,0 +1,40 @@
+.single-product {   
+    
+    .product {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .entry-header {
+        flex-basis: 50%;
+        padding-right: 2.5%;
+        }
+        
+    .product-info-wrapper {
+        flex-basis: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        padding-left: 2.5%;
+
+        h1.entry-title {
+          color: $color__orange;
+          size: 2.25rem;
+          margin-top: 0;
+        }
+
+        .product-price {
+            font-size: 1.8rem;
+            font-family: $font__accent;
+        }
+    }
+
+    .social-buttons .fa {
+        margin-right: 10px;
+    }
+    
+    .widget-area {
+        display: none;
+    }
+}

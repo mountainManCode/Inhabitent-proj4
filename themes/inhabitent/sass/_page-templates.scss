@@ -2,14 +2,18 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/*Pages without Side Bar - Front Page, About, and Shop */
-.home .front-page-wrapper, .post-type-archive-product .content-area {
+/*Pages with Hero-Banners, without Side Bar - Front Page, About*/
+.home .front-page-wrapper, .single-product .site-content {
 	padding: 0 10% 2rem;
 }
 
+/* Shop and Single-product Pages*/
+.post-type-archive-product .content-area, .single-product .site-content  {
+	padding: 2rem 10% 4rem 10%;
+}
 
 /* Pages with Side Bar - Journal Pages and Find Us Page*/
-.blog .site-content, .single-post .site-content, .page .site-content {
+.blog .site-content, .single-post .site-content, .page .site-content, .date .site-content, .search-results .site-content, .error404 .site-content, .search-no-results .site-content {
 	width: 100%;
 	display: flex;
 	flex-flow: row nowrap;
@@ -18,7 +22,7 @@
 	margin-right: auto;
 }
 
-.blog .content-area, .single .content-area, .page-template-default .content-area {
+.blog .content-area, .single-post .content-area, .page-template-default .content-area, .date .content-area, .search-results .content-area, .error404 .content-area, .search-no-results .content-area {
 	border-right: 1px solid #e1e1e1;
 	margin-left: 10%;
 	padding: 2rem 5% 2rem 0;
@@ -40,5 +44,4 @@
 .blog .entry-header, .single-post .entry-header {
 	position: relative;
 }
-
 

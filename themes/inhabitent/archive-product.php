@@ -38,7 +38,7 @@ get_header(); ?>
 		<?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
 			<div class="product-wrapper">
 				<div class="products-archive-image-wrapper">
-				<a href="<?php echo the_permalink()?>"><?php the_post_thumbnail('medium');?></a>
+				<a href="<?php echo the_permalink()?>"><?php the_post_thumbnail('large');?></a>
 				</div>
 				<div class="products-archive-text-wrapper">
 					<span><?php the_title();?></span><span class="dots">

@@ -8,6 +8,7 @@ A WordPress starter theme for a camping supply store and blog for hipsters, fork
 * HTML5
 * CSS3
 * Javascript - jQuery
+* PHP
 
 ## Built With
 

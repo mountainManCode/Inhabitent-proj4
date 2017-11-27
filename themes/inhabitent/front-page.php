@@ -55,7 +55,7 @@ get_header(); ?>
                      <div class="product-type-block-wrapper">
                         <img src="<?php echo get_template_directory_uri() . '/images/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
                         <p><?php echo $term->description; ?></p>
-                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></p>
+                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?>Stuff</a></p>
                      </div>
 
                   <?php endforeach; ?>
@@ -63,7 +63,7 @@ get_header(); ?>
             <?php endif; ?>
         </section>
 
-				<article class="front-page-journal">
+				<section class="front-page-journal">
 					<h2>Inhabitent Journal</h2>
 					<div class="front-page-journal-wrapper">
 					<?php
@@ -73,7 +73,7 @@ get_header(); ?>
 					foreach ( $postslist as $post ) :
 						setup_postdata( $post ); ?> 
 						
-						<section class="front-page-journal-entry">
+						<article class="front-page-journal-entry">
 							<div class="front-page-journal-image">
 								<?php echo get_the_post_thumbnail( $page->ID, 'large' ); ?>
 							</div>
@@ -88,17 +88,17 @@ get_header(); ?>
 									</a>
 								</div>
 									<a href="<?php the_permalink(); ?>">
-										<button class="journal-blog-button" >Read More</button>
+										<button class="blk-border-button">Read More</button>
 									</a>
 							</section>
-						</section>
+						</article>
 
 					<?php
 					endforeach; 
 					wp_reset_postdata();
 					?>
 					</div>
-				</article>
+				</section>
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
