@@ -41,8 +41,12 @@ get_header(); ?>
 				<a href="<?php echo the_permalink()?>"><?php the_post_thumbnail('large');?></a>
 				</div>
 				<div class="products-archive-text-wrapper">
-					<span><?php the_title();?></span><span class="dots">
-					<?php echo CFS()->get('price');?></span>
+					<h3 class="entry-title">
+						<?php the_title();?>
+					</h3>
+					<span class="price">
+						<?php echo CFS()->get('price');?>
+					</span>
 				</div>
 			</div>
 		<?php endforeach; wp_reset_postdata(); ?>

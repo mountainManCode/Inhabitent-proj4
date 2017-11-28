@@ -22,15 +22,28 @@
 
 <div class="entry-content">
 	<?php the_content(); ?>
-	<?php
+	<!-- <?php
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
 			'after'  => '</div>',
 		) );
-	?>
+	?> -->
 </div><!-- .entry-content -->
 
 <footer class="entry-footer">
-	<?php inhabitent_entry_footer(); ?>
+	<div class="footer-cat-tags">
+		<?php inhabitent_entry_footer(); ?>
+	</div>
+	<div class="social-buttons">
+		<button type="button" class="blk-border-button">
+			<a href="www.facebook.com"><i class="fa fa-facebook"></i>Like</a>
+		</button>	
+		<button type="button" class="blk-border-button">
+			<a href="www.twitter.com"><i class="fa fa-twitter"></i>Tweet</a>
+		</button>	
+		<button type="button" class="blk-border-button">
+			<a href="www.pinterest.com"><i class="fa fa-pinterest"></i>Pin</a>
+		</button>	
+	</div>
 </footer><!-- .entry-footer -->
 </article><!-- #post-## -->

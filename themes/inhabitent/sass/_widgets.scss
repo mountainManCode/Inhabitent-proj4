@@ -5,6 +5,15 @@
 .widget {
 	margin: 0 0 $base__space-unit;
 
+	p {
+    font-family: $font__main;
+    text-decoration: none;
+	}
+	
+	.day-of-week {
+    font-size: 700;
+  }
+
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
@@ -14,4 +23,14 @@
 /* Search widget. */
 .widget_search .search-submit {
 	display: none;
+}
+
+.widget-area {
+	padding-left: 5%;
+  width: 27%;
+  margin-right: 10%;
+
+  h2.widget-title {
+    font-size: 1.5rem;
+  }
 }

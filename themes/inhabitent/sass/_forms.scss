@@ -3,6 +3,16 @@
 --------------------------------------------------------------*/
 
 /* Buttons */
+.search-nav-wrapper button {
+	border: none;
+	background-color: transparent;
+	color: $color__green;
+	font-size: $base__font-size;
+
+	&:hover {
+		color: $color__md-grey;
+	}
+}
 
 /* Front Page Shop Buttons*/
 .home .btn {
@@ -33,38 +43,51 @@
 }
 
 /* Product Buttons and Journal Buttons*/
-.front-page-journal-button, .blk-border-button {
+.front-page-journal-button button, button.blk-border-button {
 	background-color: transparent;
 	color: #000;
 	border: $border__solid-black;
 	padding: 0.5rem 1.5rem;
+	max-width: 100%;
 
-
-	&:hover {
-		background-color: $color__lt-grey;
-		border-color: $color__lt-grey;
-		color: $color__text-hover;
+	.fa {
+		padding-right: .5rem
 	}
 
 	a {
 		color: #000;
 	}
+
+	&:hover {
+		background-color: $color__md-grey;
+		border-color: $color__md-grey;
+		color: #fff;
+
+		a {
+			color: #fff;
+		}
+	}
+
+	// &:hover {
+	// 	background-color: $color__lt-grey;
+	// 	border-color: $color__lt-grey;
+	// 	color: $color__text-hover;
+	// }
+
 }
 
-button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	border: none;
-	background: transparent;
-	@include font-size(0.75);
+	font-size: $base__font-size;
 	line-height: 1;
 	padding: .75rem 1rem .75rem;
-	color: $color__green;
-	font-size: 1.125rem;
+	color: #fff;
+	background-color: $color__lt-grey;
 
 	&:hover {
-		color: $color__md-grey;
+		background-color: $color__md-grey;
 	}
 }
 

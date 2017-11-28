@@ -420,6 +420,14 @@ table {
 # Forms
 --------------------------------------------------------------*/
 /* Buttons */
+.search-nav-wrapper button {
+  border: none;
+  background-color: transparent;
+  color: #248A83;
+  font-size: 16px; }
+  .search-nav-wrapper button:hover {
+    color: #808080; }
+
 /* Front Page Shop Buttons*/
 .home .btn {
   border: none;
@@ -443,35 +451,36 @@ table {
     color: #fff; }
 
 /* Product Buttons and Journal Buttons*/
-.front-page-journal-button, .blk-border-button {
+.front-page-journal-button button, button.blk-border-button {
   background-color: transparent;
   color: #000;
   border: 1px solid #000;
-  padding: 0.5rem 1.5rem; }
-  .front-page-journal-button:hover, .blk-border-button:hover {
-    background-color: #a1a1a1;
-    border-color: #a1a1a1;
-    color: #fff; }
-  .front-page-journal-button a, .blk-border-button a {
+  padding: 0.5rem 1.5rem;
+  max-width: 100%; }
+  .front-page-journal-button button .fa, button.blk-border-button .fa {
+    padding-right: .5rem; }
+  .front-page-journal-button button a, button.blk-border-button a {
     color: #000; }
+  .front-page-journal-button button:hover, button.blk-border-button:hover {
+    background-color: #808080;
+    border-color: #808080;
+    color: #fff; }
+    .front-page-journal-button button:hover a, button.blk-border-button:hover a {
+      color: #fff; }
 
-button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: none;
-  background: transparent;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 16px;
   line-height: 1;
   padding: .75rem 1rem .75rem;
-  color: #248A83;
-  font-size: 1.125rem; }
-  button:hover,
+  color: #fff;
+  background-color: #a1a1a1; }
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    color: #808080; }
+    background-color: #808080; }
 
 /* Fields */
 input[type="text"],
@@ -702,12 +711,24 @@ a {
 .widget {
   margin: 0 0 1.5rem;
   /* Make sure select elements fit in widgets. */ }
+  .widget p {
+    font-family: "merriweather", sans-serif;
+    text-decoration: none; }
+  .widget .day-of-week {
+    font-size: 700; }
   .widget select {
     max-width: 100%; }
 
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
+
+.widget-area {
+  padding-left: 5%;
+  width: 27%;
+  margin-right: 10%; }
+  .widget-area h2.widget-title {
+    font-size: 1.5rem; }
 
 /*--------------------------------------------------------------
 # Content
@@ -821,8 +842,8 @@ object {
 .post-type-archive-product .content-area, .single-product .site-content {
   padding: 2rem 10% 4rem 10%; }
 
-/* Pages with Side Bar - Journal Pages and Find Us Page*/
-.blog .site-content, .single-post .site-content, .page .site-content, .date .site-content, .search-results .site-content, .error404 .site-content, .search-no-results .site-content {
+/* Pages with Side Bar - Journal Pages(Cat/Tags) and Find Us Page*/
+.blog .site-content, .single-post .site-content, .page .site-content, .date .site-content, .search-results .site-content, .error404 .site-content, .search-no-results .site-content, .category .site-content, .tag .site-content {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -837,7 +858,7 @@ object {
   margin-left: auto;
   margin-right: auto; }
 
-.blog .content-area, .single-post .content-area, .page-template-default .content-area, .date .content-area, .search-results .content-area, .error404 .content-area, .search-no-results .content-area {
+.blog .content-area, .single-post .content-area, .page-template-default .content-area, .date .content-area, .search-results .content-area, .error404 .content-area, .search-no-results .content-area, .category .content-area, .tag .content-area {
   border-right: 1px solid #e1e1e1;
   margin-left: 10%;
   padding: 2rem 5% 2rem 0;
@@ -1107,7 +1128,39 @@ object {
   .post-type-archive-product .product-wrapper .products-archive-text-wrapper {
     border: 1px solid #e1e1e1;
     border-top-width: 5px;
-    padding: .75rem 1rem; }
+    padding: .75rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow: hidden; }
+    .post-type-archive-product .product-wrapper .products-archive-text-wrapper .entry-title {
+      font-family: "merriweather", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-transform: none;
+      background: #fff;
+      display: inline;
+      padding: 0 .25rem 0 0;
+      margin: 0;
+      -ms-flex-item-align: center;
+          align-self: center;
+      overflow: hidden; }
+      .post-type-archive-product .product-wrapper .products-archive-text-wrapper .entry-title::after {
+        width: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        content: "..........................."; }
+      .post-type-archive-product .product-wrapper .products-archive-text-wrapper .entry-title .price {
+        padding: 0 0 0 .25rem;
+        display: relative; }
 
 .single-product .product {
   display: -webkit-box;
@@ -1154,17 +1207,18 @@ object {
   display: none; }
 
 /* Journal Page */
-.blog .entry-header, .single-post .entry-header {
+.blog .entry-header, .single-post .entry-header, .category .entry-header, .tag .entry-header {
   width: 100%;
   max-height: 100%;
-  line-height: 0; }
-  .blog .entry-header img, .single-post .entry-header img {
+  line-height: 0;
+  position: relative; }
+  .blog .entry-header img, .single-post .entry-header img, .category .entry-header img, .tag .entry-header img {
     width: 100%; }
 
-.blog .entry-header a, .single-post .entry-header a {
+.blog .entry-header a, .single-post .entry-header a, .category .entry-header a, .tag .entry-header a {
   color: #fff; }
 
-.blog h2.entry-title, .single-post h1.entry-title {
+.blog h2.entry-title, .single-post h1.entry-title, .category h2.entry-title, .tag h2.entry-title {
   background-color: #248A83;
   color: #fff;
   font-size: 2rem;
@@ -1175,7 +1229,7 @@ object {
   left: 0;
   top: 0; }
 
-.blog .entry-meta, .single-post .entry-meta {
+.blog .entry-meta, .single-post .entry-meta, .category .entry-meta, .tag .entry-meta {
   background-color: #248A83;
   color: #fff;
   display: -webkit-box;
@@ -1190,9 +1244,9 @@ object {
   right: 0;
   bottom: 0; }
 
-.blog .entry-content, .single-post .entry-content {
+.blog .entry-content, .single-post .entry-content, .category .entry-content, .tag .entry-content {
   margin: 1.5rem 0 0; }
-  .blog .entry-content p, .single-post .entry-content p {
+  .blog .entry-content p, .single-post .entry-content p, .category .entry-content p, .tag .entry-content p {
     margin-bottom: 1.5rem; }
 
 .journal-blog-button {
@@ -1201,6 +1255,31 @@ object {
   border: 1px solid #000;
   padding: 0.75rem 1.5rem;
   margin-bottom: 3rem; }
+
+/* Single Journal - Footer */
+.single-post .entry-footer {
+  margin-bottom: 3rem; }
+  .single-post .entry-footer .footer-cat-tags {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    margin-bottom: 1.5rem; }
+  .single-post .entry-footer .cat-links, .single-post .entry-footer .tags-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    font-family: "nov", sans-serif;
+    text-transform: uppercase; }
+  .single-post .entry-footer .cat-links {
+    margin-right: 1.5rem; }
 
 /* 404 Page */
 .error404 h2.widgettitle, .error404 h2.widget-title {
@@ -1214,20 +1293,6 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap; }
-
-.widget-area {
-  padding-left: 5%;
-  width: 27%;
-  margin-right: 10%; }
-  .widget-area h2.widget-title {
-    font-size: 1.5rem; }
-
-.widget p {
-  font-family: "merriweather", sans-serif;
-  text-decoration: none; }
-
-.widget .day-of-week {
-  font-size: 700; }
 
 /* Footer */
 .site-footer {
