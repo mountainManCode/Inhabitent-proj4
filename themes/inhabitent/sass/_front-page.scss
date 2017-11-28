@@ -102,8 +102,7 @@
 
 		// font-size: 2rem;
 		display: grid;
-		grid-template-areas: "canoe canoe beach beach"
-			"canoe canoe mountain night";
+		grid-template-areas: "canoe canoe beach beach" "canoe canoe mountain night";
 		grid-gap: 0.5rem;
 		width: 100%;
 		height: 80vh;
@@ -111,7 +110,7 @@
 
 		.adventure-title {
 			color: #fff;
-			padding: 2rem 1rem 0 1rem;
+			padding: 3rem 1rem 0 1rem;
 			text-align: left;
 			text-transform: none;
 			font-family: $font__main;
@@ -119,24 +118,24 @@
 	}
 
 	.adventure-canoe {
-		background: url("../../assets/images/canoe-girl.jpg") center / cover;
+		background: linear-gradient((rgba(0, 0, 0, 0.50)), (rgba(0, 0, 0, 0.50))), url("../../assets/images/canoe-girl.jpg") center / cover;
 		grid-area: canoe;
 	}
 
 	.adventure-beach {
-		background: url("../../assets/images/beach-bonfire.jpg") center / cover;
+		background: linear-gradient((rgba(0, 0, 0, 0.50)), (rgba(0, 0, 0, 0.50))), url("../../assets/images/beach-bonfire.jpg") center / cover;
 		grid-area: beach;
 		font-size: 1.5rem;
 	}
 
 	.adventure-big-mountain {
-		background: url("../../assets/images/mountain-hikers.jpg") center / cover;
+		background: linear-gradient((rgba(0, 0, 0, 0.50)), (rgba(0, 0, 0, 0.50))), url("../../assets/images/mountain-hikers.jpg") center / cover;
 		grid-area: mountain;
 		font-size: 1.25rem;
 	}
 
 	.adventure-night-sky {
-		background: url("../../assets/images/night-sky.jpg") center / cover;
+		background: linear-gradient((rgba(0, 0, 0, 0.50)), (rgba(0, 0, 0, 0.50))), url("../../assets/images/night-sky.jpg") center / cover;
 		grid-area: night;
 		font-size: 1.25rem
 	}

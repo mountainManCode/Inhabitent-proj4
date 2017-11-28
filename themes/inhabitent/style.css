@@ -290,6 +290,10 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2px;
   clear: both; }
 
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: .5rem; }
+
 h2 {
   font-size: 2.4rem;
   color: #2f1339; }
@@ -428,19 +432,27 @@ table {
     color: #fff; }
 
 /* Adventure White-Border Buttons */
-.home .wht-border-button
+.home .wht-border-button {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  margin: 0.5rem 0 1rem 1rem; }
+  .home .wht-border-button:hover {
+    background-color: #808080;
+    color: #fff; }
+
+/* Product Buttons and Journal Buttons*/
 .front-page-journal-button, .blk-border-button {
   background-color: transparent;
   color: #000;
   border: 1px solid #000;
   padding: 0.5rem 1.5rem; }
-  .home .wht-border-button
-.front-page-journal-button:hover, .blk-border-button:hover {
+  .front-page-journal-button:hover, .blk-border-button:hover {
     background-color: #a1a1a1;
     border-color: #a1a1a1;
     color: #fff; }
-  .home .wht-border-button
-.front-page-journal-button a, .blk-border-button a {
+  .front-page-journal-button a, .blk-border-button a {
     color: #000; }
 
 button,
@@ -468,8 +480,9 @@ input[type="url"],
 input[type="password"],
 textarea {
   color: #666;
-  border: none;
-  background: transparent; }
+  border: 1px solid #e1e1e1;
+  background-color: #f4f4f4;
+  padding: .3rem; }
 
 input[type="text"],
 input[type="email"],
@@ -508,8 +521,6 @@ textarea {
     width: 3.5rem;
     height: 3rem; }
   .site-header .logo {
-    background: url("../../images/inhabitent-logo-tent.svg") no-repeat;
-    background-size: 100%;
     width: 100%;
     height: 100%; }
 
@@ -855,12 +866,14 @@ object {
   position: relative; }
 
 /* About Page */
-.page-template-about h1 {
-  visibility: hidden; }
-
 .page-template-about .custom-hero {
   height: 100vh;
   width: 100%; }
+  .page-template-about .custom-hero h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    padding: 45vh 0; }
 
 .page-template-about .entry-content {
   padding: 0 20vw 4rem; }
@@ -1001,32 +1014,36 @@ object {
   margin-bottom: 4rem; }
   .adventure-article-wrapper .adventure-title {
     color: #fff;
-    padding: 2rem 1rem 0 1rem;
+    padding: 3rem 1rem 0 1rem;
     text-align: left;
     text-transform: none;
     font-family: "merriweather", sans-serif; }
 
 .adventure-canoe {
-  background: url("../../assets/images/canoe-girl.jpg") center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../assets/images/canoe-girl.jpg") center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/canoe-girl.jpg") center/cover;
   grid-area: canoe; }
 
 .adventure-beach {
-  background: url("../../assets/images/beach-bonfire.jpg") center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../assets/images/beach-bonfire.jpg") center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/beach-bonfire.jpg") center/cover;
   grid-area: beach;
   font-size: 1.5rem; }
 
 .adventure-big-mountain {
-  background: url("../../assets/images/mountain-hikers.jpg") center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../assets/images/mountain-hikers.jpg") center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/mountain-hikers.jpg") center/cover;
   grid-area: mountain;
   font-size: 1.25rem; }
 
 .adventure-night-sky {
-  background: url("../../assets/images/night-sky.jpg") center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../assets/images/night-sky.jpg") center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/night-sky.jpg") center/cover;
   grid-area: night;
   font-size: 1.25rem; }
 
 /* Main Shop Page */
-.post-type-archive-product h2 {
+.post-type-archive-product h1 {
   text-align: center;
   margin-top: 0; }
 
@@ -1041,7 +1058,9 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center; }
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+  border-bottom: 1px dashed #c8c8c8; }
   .post-type-archive-product .product-type-blocks .product-type-block-wrapper {
     text-transform: uppercase;
     padding: 1rem 5%; }
@@ -1064,7 +1083,7 @@ object {
       -ms-flex: 0 1 23.5%;
           flex: 0 1 23.5%;
   max-width: 23.5%;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1074,12 +1093,21 @@ object {
           flex-flow: column nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .post-type-archive-product .product-wrapper img {
-    height: 100%; }
+          justify-content: space-between;
+  overflow: hidden;
+  position: relative; }
+  .post-type-archive-product .product-wrapper .products-archive-image-wrapper {
+    -ms-flex-item-align: center;
+        align-self: center; }
+    .post-type-archive-product .product-wrapper .products-archive-image-wrapper img {
+      width: auto;
+      max-width: none;
+      height: 100%;
+      max-height: 250px; }
   .post-type-archive-product .product-wrapper .products-archive-text-wrapper {
     border: 1px solid #e1e1e1;
-    border-top-width: 5px; }
+    border-top-width: 5px;
+    padding: .75rem 1rem; }
 
 .single-product .product {
   display: -webkit-box;
@@ -1208,7 +1236,7 @@ object {
   height: 50vh;
   width: 100%;
   color: #fff;
-  padding-bottom: 15rem; }
+  padding-bottom: 10vh; }
   .site-footer h3 {
     color: #d99054; }
   .site-footer a {
@@ -1222,8 +1250,8 @@ object {
       justify-content: space-around;
   padding: 3rem 10% 0; }
   .footer-wrapper .footer-contact, .footer-wrapper .footer-business-hours {
-    -ms-flex-preferred-size: 20%;
-        flex-basis: 20%; }
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%; }
   .footer-wrapper .footer-inhabitent-image {
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;

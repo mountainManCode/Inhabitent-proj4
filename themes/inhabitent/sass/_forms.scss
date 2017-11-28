@@ -19,7 +19,18 @@
 }
 
 /* Adventure White-Border Buttons */
-.home .wht-border-button
+.home .wht-border-button {
+	border: 1px solid #fff;
+	background-color: transparent;
+	color: #fff;
+	padding: 0.5rem 1.5rem;
+	margin: 0.5rem 0 1rem 1rem;
+
+	&:hover {
+		background-color: $color__md-grey;
+		color: #fff;
+	}
+}
 
 /* Product Buttons and Journal Buttons*/
 .front-page-journal-button, .blk-border-button {
@@ -65,8 +76,9 @@ input[type="url"],
 input[type="password"],
 textarea {
 	color: #666;
-	border: none;
-	background: transparent;
+	border: $border__solid-lt-grey;
+	background-color: #f4f4f4;
+	padding: .3rem;
 
 }
 

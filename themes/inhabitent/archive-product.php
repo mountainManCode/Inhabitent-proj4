@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
-<h2>Shop Stuff</h2>
+<h1>Shop Stuff</h1>
 <?php
    $terms = get_terms( array(
        'taxonomy' => 'product-type',

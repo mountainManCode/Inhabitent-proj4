@@ -41,7 +41,7 @@
 					<div class="footer-inhabitent-image">
 						<img src="<?php echo get_template_directory_uri() . '/assets/images/inhabitent-logo-text.svg' ?>" alt="Inhabitent logo">
 					</div>
-				</section>
+				</section> <!-- footer wrapper -->
 				<div class="site-info">
 					<p>Copyright &copy 2016 Inhabitent</p>
 				</div><!-- .site-info -->
