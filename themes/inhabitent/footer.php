@@ -39,7 +39,7 @@
 							</p>
 						</div>
 					<div class="footer-inhabitent-image">
-						<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-text.svg' ?>" alt="Inhabitent logo">
+						<img src="<?php echo get_template_directory_uri() . '/assets/images/inhabitent-logo-text.svg' ?>" alt="Inhabitent logo">
 					</div>
 				</section>
 				<div class="site-info">

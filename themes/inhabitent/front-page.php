@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<section class="custom-hero-banner">
-				<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-full.svg' ?>" class="logo" alt="Inhabitent logo" />
+				<img src="<?php echo get_template_directory_uri() . '/assets/images/inhabitent-logo-full.svg' ?>" class="logo" alt="Inhabitent logo" />
 			</section>
 
 			<section class="front-page-wrapper">
@@ -53,9 +53,9 @@ get_header(); ?>
                   <?php foreach ( $terms as $term ) : ?>
 
                      <div class="product-type-block-wrapper">
-                        <img src="<?php echo get_template_directory_uri() . '/images/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
+                        <img src="<?php echo get_template_directory_uri() . '/assets/images/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
                         <p><?php echo $term->description; ?></p>
-                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?>Stuff</a></p>
+                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></p>
                      </div>
 
                   <?php endforeach; ?>
@@ -98,8 +98,28 @@ get_header(); ?>
 					wp_reset_postdata();
 					?>
 					</div>
-				</section>
-			</section>
+				</section> <!-- Front-Page Journal-->
+
+				<section class="adventure-article-wrapper">
+					<article class="adventure-canoe">
+						<h2 class="adventure-title">Getting Back to Nature in a Canoe</h2>
+						<button class="wht-border-button">Read More</button>
+					</article>
+					<article class="adventure-beach">
+						<h2 class="adventure-title">A Night with Friends at the Beach</h2>
+						<button class="wht-border-button">Read More</button>
+					</article>
+					<article class="adventure-big-mountain">
+						<h2 class="adventure-title">Taking in the view at Big Mountain</h2>
+						<button class="wht-border-button">Read More</button>
+					</article>
+					<article class="adventure-night-sky">
+						<h2 class="adventure-title">Star-Gazing at the Night Sky</h2>
+						<button class="wht-border-button">Read More</button>
+					</article>
+				</section> <!-- Front-Page Adventure Articles-->
+
+			</section> <!-- Front-Page Wrapper -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

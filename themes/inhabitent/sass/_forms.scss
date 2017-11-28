@@ -18,11 +18,14 @@
 	}
 }
 
+/* Adventure White-Border Buttons */
+.home .wht-border-button
+
 /* Product Buttons and Journal Buttons*/
 .front-page-journal-button, .blk-border-button {
 	background-color: transparent;
 	color: #000;
-	border: $border__solid;
+	border: $border__solid-black;
 	padding: 0.5rem 1.5rem;
 
 

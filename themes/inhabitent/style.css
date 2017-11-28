@@ -427,17 +427,20 @@ table {
     background-color: #808080;
     color: #fff; }
 
-/* Product Buttons and Journal Buttons*/
+/* Adventure White-Border Buttons */
+.home .wht-border-button
 .front-page-journal-button, .blk-border-button {
   background-color: transparent;
   color: #000;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #000;
   padding: 0.5rem 1.5rem; }
-  .front-page-journal-button:hover, .blk-border-button:hover {
+  .home .wht-border-button
+.front-page-journal-button:hover, .blk-border-button:hover {
     background-color: #a1a1a1;
     border-color: #a1a1a1;
     color: #fff; }
-  .front-page-journal-button a, .blk-border-button a {
+  .home .wht-border-button
+.front-page-journal-button a, .blk-border-button a {
     color: #000; }
 
 button,
@@ -867,8 +870,8 @@ object {
 /* Front page */
 /* Hero Banner*/
 .custom-hero-banner {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/home-hero.jpg") no-repeat top;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg") no-repeat top;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../assets/images/home-hero.jpg") no-repeat top;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../assets/images/home-hero.jpg") no-repeat top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -960,8 +963,8 @@ object {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -986,6 +989,41 @@ object {
   border: 1px solid #e1e1e1;
   padding: 0.75rem;
   height: auto; }
+
+/* Adventure Articles */
+.adventure-article-wrapper {
+  color: #fff;
+  display: grid;
+  grid-template-areas: "canoe canoe beach beach" "canoe canoe mountain night";
+  grid-gap: 0.5rem;
+  width: 100%;
+  height: 80vh;
+  margin-bottom: 4rem; }
+  .adventure-article-wrapper .adventure-title {
+    color: #fff;
+    padding: 2rem 1rem 0 1rem;
+    text-align: left;
+    text-transform: none;
+    font-family: "merriweather", sans-serif; }
+
+.adventure-canoe {
+  background: url("../../assets/images/canoe-girl.jpg") center/cover;
+  grid-area: canoe; }
+
+.adventure-beach {
+  background: url("../../assets/images/beach-bonfire.jpg") center/cover;
+  grid-area: beach;
+  font-size: 1.5rem; }
+
+.adventure-big-mountain {
+  background: url("../../assets/images/mountain-hikers.jpg") center/cover;
+  grid-area: mountain;
+  font-size: 1.25rem; }
+
+.adventure-night-sky {
+  background: url("../../assets/images/night-sky.jpg") center/cover;
+  grid-area: night;
+  font-size: 1.25rem; }
 
 /* Main Shop Page */
 .post-type-archive-product h2 {
@@ -1165,7 +1203,7 @@ object {
 
 /* Footer */
 .site-footer {
-  background: url("../../images/dark-wood@2x.png") no-repeat bottom;
+  background: url("../../assets/images/dark-wood@2x.png") no-repeat bottom;
   background-size: cover;
   height: 50vh;
   width: 100%;
