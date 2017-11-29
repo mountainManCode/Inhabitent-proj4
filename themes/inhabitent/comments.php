@@ -10,7 +10,7 @@
  * the visitor has not yet entered the password we will
  * return early without loading the comments.
  */
- if ( post_password_required() ) {
+if ( post_password_required() ) {
 	return;
 }
 ?>
@@ -39,7 +39,7 @@
 		<ol class="comment-list">
 			<?php
 				wp_list_comments( array(
-					'callback' => 'red_starter_comment_list'
+					'callback' => 'inhabitent_comment_list'
 				) );
 			?>
 		</ol><!-- .comment-list -->

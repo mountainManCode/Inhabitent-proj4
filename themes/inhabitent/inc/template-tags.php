@@ -91,20 +91,20 @@
  		// Count the number of categories that are attached to the posts.
  		$all_the_cool_cats = count( $all_the_cool_cats );
 
- 		set_transient( 'red_starter_categories', $all_the_cool_cats );
+ 		set_transient( 'inhabitent_categories', $all_the_cool_cats );
  	}
 
  	if ( $all_the_cool_cats > 1 ) {
- 		// This blog has more than 1 category so red_starter_categorized_blog should return true.
+ 		// This blog has more than 1 category so inhabitent_categorized_blog should return true.
  		return true;
  	} else {
- 		// This blog has only 1 category so red_starter_categorized_blog should return false.
+ 		// This blog has only 1 category so inhabitent_categorized_blog should return false.
  		return false;
  	}
  }
 
  /**
-  * Flush out the transients used in red_starter_categorized_blog.
+  * Flush out the transients used in inhabitent_categorized_blog.
   */
  function inhabitent_category_transient_flusher() {
  	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {

@@ -1,6 +1,6 @@
     /* Main Shop Page */
     
-.post-type-archive-product {
+.post-type-archive, .tax-product-type {
 
   h1 {
     text-align: center;
@@ -75,7 +75,7 @@
           width: 0;
           white-space: nowrap;
           overflow: hidden;
-          content: "...........................";
+          content: "....";
       }
 
       .price {

@@ -13,7 +13,7 @@
 }
 
 /* Pages with Side Bar - Journal Pages(Cat/Tags) and Find Us Page*/
-.blog .site-content, .single-post .site-content, .page .site-content, .date .site-content, .search-results .site-content, .error404 .site-content, .search-no-results .site-content, .category .site-content, .tag .site-content {
+.blog .site-content, .single-post .site-content, .page .site-content, .date .site-content, .search-results .site-content, .error404 .site-content, .search-no-results .site-content, .category .site-content, .tag .site-content, .tax-product-type .site-content {
 	width: 100%;
 	display: flex;
 	flex-flow: row nowrap;
@@ -22,7 +22,7 @@
 	margin-right: auto;
 }
 
-.blog .content-area, .single-post .content-area, .page-template-default .content-area, .date .content-area, .search-results .content-area, .error404 .content-area, .search-no-results .content-area, .category .content-area, .tag .content-area {
+.blog .content-area, .single-post .content-area, .page-template-default .content-area, .date .content-area, .search-results .content-area, .error404 .content-area, .search-no-results .content-area, .category .content-area, .tag .content-area, .tax-product-type .content-area {
 	border-right: 1px solid #e1e1e1;
 	margin-left: 10%;
 	padding: 2rem 5% 2rem 0;
@@ -33,13 +33,14 @@
 	align-items: center;
 }
 
-.page-title {
-	margin-top: 0;
-}
+	.page-title {
+		margin-top: 0;
+	}
 
-.hentry {
-	margin: 0 0 1.5rem;
-}
+	.hentry {
+		margin: 0 0 1.5rem;
+	}
+
 
 .blog .entry-header, .single-post .entry-header {
 	position: relative;
