@@ -1,10 +1,16 @@
-    /* Main Shop Page */
+    /* Shop Page - main shop & taxonomy shop(do, eat...) */
     
 .post-type-archive, .tax-product-type {
 
   h1 {
     text-align: center;
     margin-top: 0;
+  }
+
+  .page-header {  /* page header on Taxonomy shop page */
+    text-align: center;
+    border-bottom: $border__dashed;
+    margin-bottom: $base__space-unit*2;
   }
   
   .product-type-blocks {
@@ -71,18 +77,9 @@
         align-self: center;
         overflow: hidden;
 
-        &::after {
-          width: 0;
-          white-space: nowrap;
-          overflow: hidden;
-          content: "....";
-      }
-
       .price {
         padding: 0 0 0 .25rem;
         display: relative;
-
- 
         } 
       }
     }

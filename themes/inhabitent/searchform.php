@@ -1,10 +1,12 @@
 <div class="search-nav-wrapper">
+	<div class="search-button-nav search-button-error">
 	<button id="toggle-search" class="search-submit">
-		<span class="icon-search" aria-hidden="true">
-			<i class="fa fa-search"></i>
-		</span>
-		<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
-	</button>
+			<span class="icon-search" aria-hidden="true">
+				<i class="fa fa-search"></i>
+			</span>
+			<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
+		</button>
+</div>
 	<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 		<fieldset class="search-wrapper">
 			<label class="search-bar">
@@ -13,3 +15,4 @@
 		</fieldset>
 	</form>
 </div>
+

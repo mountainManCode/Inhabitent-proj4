@@ -8,12 +8,12 @@
 }
 
 /* Shop and Single-product Pages*/
-.post-type-archive-product .content-area, .single-product .site-content  {
+.post-type-archive-product .content-area, .single-product .site-content, .tax-product-type .content-area  {
 	padding: 2rem 10% 4rem 10%;
 }
 
 /* Pages with Side Bar - Journal Pages(Cat/Tags) and Find Us Page*/
-.blog .site-content, .single-post .site-content, .page .site-content, .date .site-content, .search-results .site-content, .error404 .site-content, .search-no-results .site-content, .category .site-content, .tag .site-content, .tax-product-type .site-content {
+.blog .site-content, .single-post .site-content, .page .site-content, .date .site-content, .search-results .site-content, .error404 .site-content, .search-no-results .site-content, .category .site-content, .tag .site-content {
 	width: 100%;
 	display: flex;
 	flex-flow: row nowrap;
@@ -22,7 +22,7 @@
 	margin-right: auto;
 }
 
-.blog .content-area, .single-post .content-area, .page-template-default .content-area, .date .content-area, .search-results .content-area, .error404 .content-area, .search-no-results .content-area, .category .content-area, .tag .content-area, .tax-product-type .content-area {
+.blog .content-area, .single-post .content-area, .page-template-default .content-area, .date .content-area, .search-results .content-area, .error404 .content-area, .search-no-results .content-area, .category .content-area, .tag .content-area {
 	border-right: 1px solid #e1e1e1;
 	margin-left: 10%;
 	padding: 2rem 5% 2rem 0;
