@@ -2,7 +2,7 @@
 
 A WordPress starter theme for a camping supply store and blog for hipsters, forked from Underscores. 
 
-  ![Inhabitent Screen Shot - Shop Page](./themes/inhabitent/assets/images/inhabitent-proj-4.png "Inhabitent shop page")
+  ![Inhabitent Screen Shot - Shop Page](./themes/inhabitent/assets/images/inhabitent-screenshot-1.png "Inhabitent shop page")
   ![Inhabitent Screen Shot - Journal Page](./themes/inhabitent/assets/images/inhabitent-screenshot-2.png "Inhabitent journal page")
   
 
