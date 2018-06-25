@@ -1,51 +1,61 @@
 /* Footer */
 
 .site-footer {
-	background: url("../../assets/images/dark-wood@2x.png") no-repeat bottom;
-	background-size: cover;	
-	height: 50vh;
-	width: 100%;
-	color: #fff;
-	padding-bottom: 10vh;
+  background: url('../../assets/images/dark-wood@2x.png') no-repeat bottom;
+  background-size: cover;
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  min-width: 100%;
+  color: #fff;
+  margin-top: 2rem;
+  padding-bottom: 10vh;
 
-	h3 {
-		color: $color__orange;
-	}
+  h3 {
+    color: $color__orange;
+  }
 
-	a {
-		color: #fff;
-	}
+  a {
+    color: #fff;
+  }
 }
 
 .footer-wrapper {
-	display: flex;
-	justify-content: space-around;
-	padding: 3rem 10% 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  padding: 3rem 10% 0;
+  @include tablet {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
 
-	.footer-contact, .footer-business-hours {
-		flex-basis: 25%;
-	}
+  .footer-contact,
+  .footer-business-hours {
+    flex-basis: 25%;
+  }
 
-	.footer-inhabitent-image {
-		flex-basis: 45%;
-		text-align: right;
-	}
+  .footer-inhabitent-image {
+    flex-basis: 45%;
+    text-align: right;
+  }
 
-	img {
-		padding: 1rem 0 0;
-	}
+  img {
+    padding: 1rem 0 0;
+  }
 
-	.dashicons {
-	display: inline;
-	margin: 0 .25rem;
-	}
-	
-	.dashicons-email, .dashicons-phone {
-		margin: 0 .25rem;
-	}
+  .dashicons {
+    display: inline;
+    margin: 0 0.25rem;
+  }
+
+  .dashicons-email,
+  .dashicons-phone {
+    margin: 0 0.25rem;
+  }
 }
 
 .site-info {
-	text-align: center;
+  text-align: center;
 }
-

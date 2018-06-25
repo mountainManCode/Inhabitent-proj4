@@ -23,8 +23,6 @@ get_header(); ?>
 					</header>
 				<?php endif; ?>
 
-				<?php /* Start the Loop */ ?>
-
 				<?php while ( have_posts() ) : the_post(); ?>
 				
 					<?php get_template_part( 'template-parts/content' ); ?>
@@ -100,28 +98,35 @@ get_header(); ?>
 					</div>
 				</section> <!-- Front-Page Journal-->
 
-				<section class="adventure-article-wrapper">
-					<article class="adventure-canoe">
-						<h2 class="adventure-title">Getting Back to Nature in a Canoe</h2>
-						<button class="wht-border-button">Read More</button>
-					</article>
-					<article class="adventure-beach">
-						<h2 class="adventure-title">A Night with Friends at the Beach</h2>
-						<button class="wht-border-button">Read More</button>
-					</article>
-					<article class="adventure-big-mountain">
-						<h2 class="adventure-title">Taking in the view at Big Mountain</h2>
-						<button class="wht-border-button">Read More</button>
-					</article>
-					<article class="adventure-night-sky">
-						<h2 class="adventure-title">Star-Gazing at the Night Sky</h2>
-						<button class="wht-border-button">Read More</button>
-					</article>
-				</section> <!-- Front-Page Adventure Articles-->
+			<section class"front-page__adventure-blog">
+				<h2>Latest Adventures</h2>
+				<!-- <section class="adventure-article-wrapper"> -->
+				<ul class="adventure-article-wrapper">
+				<?php
+					$args = array( 'post_type'=>'adventure', 'posts_per_page'=> 4);
+					$posts = get_posts( $args ); // returns an array of posts
+				?>
+					<?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
+
+					<?php 
+						if ( $adventure_hero = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium-large' ) ) : 
+					?>
+
+					<li class="adventure-hero" style="background-image: url('<?php echo $adventure_hero[0]; ?>')">
+						<h2><a href="<?php echo get_permalink();?>"	class="adventure-title">
+						<?php the_title();?></a></h2>
+				
+						<a href="<?php echo get_permalink();?>"><button class="wht-border-button">read more</button></a>
+					</li>
+
+					<?php endif; ?>
+					<?php endforeach; wp_reset_postdata(); ?>
+				</ul>
+			</section><!-- Front-Page Adventure Blog-->
 
 			</section> <!-- Front-Page Wrapper -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+	<?php get_footer(); ?>
 
-<?php get_footer(); ?>

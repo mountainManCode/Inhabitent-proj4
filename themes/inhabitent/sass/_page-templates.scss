@@ -3,46 +3,66 @@
 --------------------------------------------------------------*/
 
 /*Pages with Hero-Banners, without Side Bar - Front Page, About*/
-.home .front-page-wrapper, .single-product .site-content {
-	padding: 0 10% 2rem;
+.home .front-page-wrapper,
+.single-product .site-content {
+  padding: 0 10% 2rem;
+  margin-bottom: 1rem;
 }
 
 /* Shop and Single-product Pages*/
-.post-type-archive-product .content-area, .single-product .site-content, .tax-product-type .content-area  {
-	padding: 2rem 10% 4rem 10%;
+.post-type-archive-product .content-area,
+.single-product .site-content,
+.tax-product-type .content-area {
+  padding: 2rem 10% 4rem 10%;
 }
 
 /* Pages with Side Bar - Journal Pages(Cat/Tags) and Find Us Page*/
-.blog .site-content, .single-post .site-content, .page .site-content, .date .site-content, .search-results .site-content, .error404 .site-content, .search-no-results .site-content, .category .site-content, .tag .site-content {
-	width: 100%;
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	margin-left: auto;
-	margin-right: auto;
+.blog .site-content,
+.single-post .site-content,
+.page .site-content,
+.date .site-content,
+.search-results .site-content,
+.error404 .site-content,
+.search-no-results .site-content,
+.category .site-content,
+.tag .site-content {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.blog .content-area, .single-post .content-area, .page-template-default .content-area, .date .content-area, .search-results .content-area, .error404 .content-area, .search-no-results .content-area, .category .content-area, .tag .content-area {
-	border-right: 1px solid #e1e1e1;
-	margin-left: 10%;
-	padding: 2rem 5% 2rem 0;
-	width: 73%;
-	display: flex;
-	flex-flow: column nowrap;
-	flex: 0 1 auto;
-	align-items: center;
+.blog .content-area,
+.single-post .content-area,
+.page-template-default .content-area,
+.date .content-area,
+.search-results .content-area,
+.error404 .content-area,
+.search-no-results .content-area,
+.category .content-area,
+.tag .content-area {
+  border-right: 1px solid #e1e1e1;
+  margin-left: 10%;
+  margin-bottom: 2rem;
+  padding: 2rem 5% 2rem 0;
+  width: 73%;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 0 1 auto;
+  align-items: center;
 }
 
-	.page-title {
-		margin-top: 0;
-	}
-
-	.hentry {
-		margin: 0 0 1.5rem;
-	}
-
-
-.blog .entry-header, .single-post .entry-header {
-	position: relative;
+.page-title {
+  margin-top: 0;
 }
 
+.hentry {
+  margin: 0 0 1.5rem;
+}
+
+.blog .entry-header,
+.single-post .entry-header {
+  position: relative;
+}

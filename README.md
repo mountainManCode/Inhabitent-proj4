@@ -3,6 +3,7 @@
 A WordPress starter theme for a camping supply store and blog for hipsters, forked from Underscores. 
 
   ![Inhabitent Screen Shot - Shop Page](./themes/inhabitent/assets/images/inhabitent-screenshot-1.png "Inhabitent shop page")
+  </br>
   ![Inhabitent Screen Shot - Journal Page](./themes/inhabitent/assets/images/inhabitent-screenshot-2.png "Inhabitent journal page")
   
 
@@ -27,11 +28,11 @@ A WordPress starter theme for a camping supply store and blog for hipsters, fork
 Then add me to your `wp-content` directory.
 
 
-### 3. Install the dev dependencies
+### 2. Install the dev dependencies
 
 Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
 
-### 4. Update the proxy in `gulpfile.js`
+### 3. Update the proxy in `gulpfile.js`
 
 Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
 
